@@ -162,7 +162,5 @@ GET	/ventas/descargar/json	Descargar el archivo ventas.json generado previamente
 Estas rutas no forman parte de la interfaz del cliente ni del administrador.
 ---
 ## 📬 Contacto
-### Cualquier sugerencia nos pueden contactar por:
+### Cualquier sugerencia me pueden contactar por:
 [![Manuel Bruzzone - LinkedIn](https://img.shields.io/badge/Manuel%20Bruzzone-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/manuelbruzzone/)
-
-[![Noelia Coro - LinkedIn](https://img.shields.io/badge/Noelia%20Coro-LinkedIn-blue?logo=linkedin)](https://www.linkedin.com/in/coronoelia/)
