@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.btn-volver {
+    position: absolute;
+    margin-top: 50px;
+    left: 20px;
+    background-color: #e9ece8;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #bbd0e8;
+}
+
+.saludo {
+    text-align: center;
+    font-size: 30px;
+}
+
+.cantidadProducto {
+    color: #333;
+}

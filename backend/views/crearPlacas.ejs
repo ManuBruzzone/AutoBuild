@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/backend/public/styles/styles.css" />
+    <title>Crear Placa de Video</title>
+  </head>
+  <body>
+    <form class="form-cargar" id="formCrearPlaca">
+      <div class="aviso-crear">
+        <h2>Creando Placa de video</h2>
+      </div>
+
+      <div class="form-grid">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" required />
+        </div>
+        <div>
+          <label for="marca">Marca</label>
+          <input id="marca" name="marca" type="text" required />
+        </div>
+        <div>
+          <label for="tipo">Tipo</label>
+          <input id="tipo" name="tipo" type="text" required />
+        </div>
+        <div>
+          <label for="tipoMemoria">Tipo de Memoria</label>
+          <input id="tipoMemoria" name="tipoMemoria" type="text" required />
+        </div>
+        <div>
+          <label for="capacidadMemoria">Capacidad de Memoria</label>
+          <input
+            id="capacidadMemoria"
+            name="capacidadMemoria"
+            type="text"
+            required
+          />
+        </div>
+        <div>
+          <label for="chipsetGpu">Chipset GPU</label>
+          <input id="chipsetGpu" name="chipsetGpu" type="text" required />
+        </div>
+        <div>
+          <label for="vga">Puertos VGA (cantidad)</label>
+          <input id="vga" name="vga" type="number" min="0" required />
+        </div>
+        <div>
+          <label for="dviDigital">Puertos DVI (cantidad)</label>
+          <input
+            id="dviDigital"
+            name="dviDigital"
+            type="number"
+            min="0"
+            required
+          />
+        </div>
+        <div>
+          <label for="hdmi">Puertos HDMI (cantidad)</label>
+          <input id="hdmi" name="hdmi" type="number" min="0" required />
+        </div>
+        <div>
+          <label for="displayports">Puertos DisplayPort (cantidad)</label>
+          <input
+            id="displayports"
+            name="displayports"
+            type="number"
+            min="0"
+            required
+          />
+        </div>
+        <div>
+          <label for="precio">Precio</label>
+          <input id="precio" name="precio" type="number" min="0" required />
+        </div>
+        <div>
+          <label for="fechaLanzamiento">Fecha de Lanzamiento</label>
+          <input
+            id="fechaLanzamiento"
+            name="fechaLanzamiento"
+            type="date"
+            required
+          />
+        </div>
+        <div>
+          <label for="imagen">Imagen</label>
+          <input id="imagen" name="imagen" type="file" required />
+        </div>
+
+        <div class="checkbox-group">
+          <label for="visible">
+            ¿Visible?
+            <input id="visible" name="visible" type="checkbox" checked />
+          </label>
+        </div>
+      </div>
+
+      <div class="contenedor-boton">
+        <button type="submit" id="crearPlaca">Crear Placa</button>
+      </div>
+    </form>
+
+    <script src="/js/crearPlaca.js"></script>
+  </body>
+</html>

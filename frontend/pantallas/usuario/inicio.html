@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoBuild</title>
+    <link rel="icon" href="/frontend/assets/logo_pagina_editada.png" type="image/png"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="/frontend/styles/style.css">
+        <link rel="stylesheet" href="/frontend/styles/inicio.css">
+        <link rel="stylesheet" href="/frontend/styles/theme/dark.css">
+</head>
+
+<button id="toggle-modo">🌙</button>
+<body data-producto="inicio">
+    <main>
+        <header class="encabezado">
+            <div id="contenedor-logo-productos" class="contenedor-logo">
+                <img src="/frontend/assets/logo_pagina_editada.png" alt="AutoBuild" class="logo" />
+                <h1 class="logo-nombre">AutoBuild</h1>
+            </div>
+
+            <div class="paginas">
+                <nav id="navegacion">
+                    <a href="./inicio.html">Inicio</a>    
+                    <a href="./ayuda.html">Ayuda</a>   
+                    <a href="./carrito.html">🛒</a>
+                </nav>
+            </div>
+
+            <div class="contenedor-iniciar-sesion" id="btn-salir">
+                <img
+                src="/frontend/assets/salir-alt.png"
+                alt="Iniciar Sesion"
+                class="logo-salir"
+                />
+            </div>
+        </header>
+
+        <section class="contenido"> 
+            <p id="saludoCliente" class="saludo"></p>
+
+            <div class="categorias">
+                <div class="producto-inicio" id="irProcesadores">
+                <img 
+                src="/frontend/assets/procesador_modelo.png" 
+                alt="procesadores">
+                <h2>Procesadores</h2>
+                </div>
+
+                <div class="producto-inicio" id="irPlacas">
+                <img 
+                src="/frontend/assets/placaVideo_modelo.png" 
+                alt="Placas de video">
+                <h2>Placas de video</h2>
+                </div>
+            </div>
+        </section>
+
+        <footer class="pie">
+            <div class="desarrolladores">
+                <p>Desarrollado por Noelia Coro y Manuel Bruzzone</p>
+            </div>
+
+            <div class="contenedor-pie">
+                <p>&copy; 2025 AutoBuild. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://github.com/ManuBruzzone" target="_blank" title="GitHub de Manu">
+                    <img src="/frontend/assets/github.png" alt="GitHub Manu" class="icono-red">
+                </a>
+
+                <a href="https://www.linkedin.com/in/manuelbruzzone/" target="_blank" title="LinkedIn de Manu">
+                    <img src="/frontend/assets/linkedin.png" alt="LinkedIn Manu" class="icono-red">
+                </a>
+
+            </div>
+        </footer>
+    
+    </main>
+    <script src="/frontend/main.js"></script>
+    <script src="/frontend/styles/theme/theme.js"></script>
+</body>
+</html>

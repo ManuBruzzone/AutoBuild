@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AutoBuild – Procesadores</title>
+  <link rel="icon" href="/frontend/assets/logo_pagina.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/frontend/styles/style.css">
+  <link rel="stylesheet" href="/frontend/styles/productos.css">
+  <link rel="stylesheet" href="/frontend/styles/theme/dark.css">
+
+</head>
+<body data-producto="procesadores">
+  <button id="toggle-modo">🌙</button>
+  <main>
+    <header class="encabezado">
+      <div id="contenedor-logo-productos" class="contenedor-logo">
+        <img src="/frontend/assets/logo_pagina_editada.png" alt="AutoBuild" class="logo" />
+        <h1 class="logo-nombre">AutoBuild</h1>
+      </div>
+
+      <div class="paginas">
+        <nav id="navegacion">
+          <a href="./inicio.html">Inicio</a>
+          <a href="./ayuda.html">Ayuda</a>
+          <a href="./carrito.html">🛒</a>
+        </nav>
+      </div>
+
+      <div class="contenedor-iniciar-sesion" id="btn-salir">
+        <img
+        src="/frontend/assets/salir-alt.png"
+        alt="Iniciar Sesion"
+        class="logo-salir"
+        />
+      </div>
+    </header>
+
+    <section class="contenido">
+      <div id="notificacion" style="
+        display: none;
+        position: fixed;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #0066a2;
+        color: white;
+        padding: 20px 170px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      "></div>
+
+      <p id="saludoCliente" class="saludo"></p>
+      <div class="grid-productos" id="productos-container">
+
+      </div>
+        <div id="paginacion" class="paginador">
+          <button id="btnAnterior" class="bontonPaginacion">Anterior</button>
+          <span id="pagina" class="contadorPagina">Página 1</span>
+          <button id="btnSiguiente" class="bontonPaginacion">Siguiente</button>
+        </div>
+    </section>
+
+    <footer class="pie">
+            <div class="desarrolladores">
+                <p>Desarrollado por Noelia Coro y Manuel Bruzzone</p>
+            </div>
+
+            <div class="contenedor-pie">
+                <p>&copy; 2025 AutoBuild. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://github.com/ManuBruzzone" target="_blank" title="GitHub de Manu">
+                    <img src="/frontend/assets/github.png" alt="GitHub Manu" class="icono-red">
+                </a>
+
+                <a href="https://www.linkedin.com/in/manuelbruzzone/" target="_blank" title="LinkedIn de Manu">
+                    <img src="/frontend/assets/linkedin.png" alt="LinkedIn Manu" class="icono-red">
+                </a>
+            </div>
+        </footer>
+  </main>
+
+  <script src="/frontend/clases/procesadores.js"></script>
+  <script src="/frontend/main.js"></script>
+  <script src="/frontend/styles/theme/theme.js"></script>
+</body>
+</html>

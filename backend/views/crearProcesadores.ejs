@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/backend/public/styles/styles.css"/>
+        <title>Crear Procesador</title>
+    </head>
+    <body>
+        <form class="form-cargar" id="formCrearPlaca">
+            <div class="aviso-crear">
+                <h2>Creando Procesador</h2>      
+            </div>
+            
+            <div class="form-grid">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required />
+                </div>
+                <div>
+                    <label for="marca">Marca</label>
+                    <input id="marca" name="marca" type="text" required />
+                </div>
+                <div>
+                    <label for="modelo">Modelo</label>
+                    <input id="modelo" name="modelo" type="text" required />
+                </div>
+                <div>
+                    <label for="socket">Socket</label>
+                    <input id="socket" name="socket" type="text" required />
+                </div>
+                <div>
+                    <label for="chipsetGpu">Chipset GPU</label>
+                    <input id="chipsetGpu" name="chipsetGpu" type="text" required />
+                </div>
+                <div>
+                    <label for="nucleos">Núcleos</label>
+                    <input id="nucleos" name="nucleos" type="number" min="1" required />
+                </div>
+                <div>
+                    <label for="hilos">Hilos</label>
+                    <input id="hilos" name="hilos" type="number" min="1" required />
+                </div>
+                <div>
+                    <label for="frecuencia">Frecuencia (MHZ)</label>
+                    <input id="frecuencia" name="frecuencia" type="number" step="0.01" min="0" required />
+                </div>
+                <div>
+                    <label for="precio">Precio</label>
+                    <input id="precio" name="precio" type="number" min="0" required />
+                </div>
+                <div>
+                    <label for="fechaLanzamiento">Fecha de Lanzamiento</label>
+                    <input id="fechaLanzamiento" name="fechaLanzamiento" type="date" required />
+                </div>
+                <div>
+                    <label for="imagen">Imagen</label>
+                    <input id="imagen" name="imagen" type="file" required />
+                </div>
+                <div>
+                    <label for="visible">¿Visible?</label>
+                    <input id="visible" name="visible" type="checkbox" checked />
+                </div>
+                </div>
+                <div class="contenedor-boton">
+                    <button id="crearProcesador" onclick="console.log('Apreto el boton')">Crear Procesador</button>
+                </div>
+            </div>
+        </form>
+
+        <script src="/js/crearProcesador.js"></script> 
+    </body>
+</html>

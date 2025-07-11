@@ -1,0 +1,201 @@
+#productos-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.grid-productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.producto {
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 270px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+.producto img {
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    margin: 10px 0 5px;
+    font-size: 20px;
+    color: #333;
+    min-height: 48px;
+}
+
+.producto p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.producto button {
+    width: 100%;
+    background-color: #1a2339;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 15px;
+    margin-top: auto;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #0056b3;
+}
+
+.producto-carrito {
+    height: 390px;
+}
+
+.botones-carrito {
+    display: flex;
+}
+
+.restar, .sumar{
+    margin: 5px;
+}
+
+.paginador {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.bontonPaginacion {
+    padding: 10px 15px;
+    background-color: #1a2339;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.bontonPaginacion:hover {
+    background-color: #0056b3;
+}
+
+.contadorPagina {
+    color: #333;
+    font-weight: 600;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 700px;
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-header {
+    display: flex;
+    gap: 10px;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+.modal-img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.modal-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.precio-modal {
+    font-size: 22px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.btn-agregar-carrito {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 150px;
+    background: #1a2339;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.btn-agregar-carrito:hover {
+    transform: scale(1.02);
+}
+
+.modal-especificaciones h3 {
+    margin-top: 0;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.modal-especificaciones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-especificaciones li {
+    margin-bottom: 8px;
+}

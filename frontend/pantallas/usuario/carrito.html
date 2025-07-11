@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carrito – AutoBuild</title>
+  <link rel="icon" href="/frontend/assets/logo_pagina.png" type="image/png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="/frontend/styles/style.css">
+    <link rel="stylesheet" href="/frontend/styles/productos.css">
+    <link rel="stylesheet" href="/frontend/styles/carrito.css">
+    <link rel="stylesheet" href="/frontend/styles/theme/dark.css">
+</head>
+
+<body>
+  <main>
+    <header class="encabezado-bienvenida">
+          <button id="btn-volver" class="btn-volver">Volver</button>
+          <div class="contenedor-logo">
+              <img src="/frontend/assets/logo_pagina_editada.png" alt="AutoBuild" class="logo" />
+              <h1 class="logo-nombre">AutoBuild</h1>
+          </div>
+    </header>
+
+    <section>
+      <div id="errorCarrito" style="
+        display: none;
+        position: fixed;
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: red;
+        color: white;
+        padding: 20px 170px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        font-family: Montserrat, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+      "></div>
+
+      <h1 class="saludo">🛒 Tu Carrito</h1>
+      <div id="carrito-container" class="grid-productos">
+
+      </div>
+
+      <div class="carrito-footer">
+        <h2 id="carrito-total">Total: $0</h2>
+        <button id="btnVaciarCarrito" class="boton-vaciar">Vaciar carrito</button>
+        <button id="btnFinalizarCompra" class="boton-finalizar">Finalizar compra</button>
+
+      </div>
+    </section>
+
+    
+    <footer class="pie">
+            <div class="desarrolladores">
+                <p>Desarrollado por Noelia Coro y Manuel Bruzzone</p>
+            </div>
+
+            <div class="contenedor-pie">
+                <p>&copy; 2025 AutoBuild. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://github.com/ManuBruzzone" target="_blank" title="GitHub de Manu">
+                    <img src="/frontend/assets/github.png" alt="GitHub Manu" class="icono-red">
+                </a>
+
+                <a href="https://www.linkedin.com/in/manuelbruzzone/" target="_blank" title="LinkedIn de Manu">
+                    <img src="/frontend/assets/linkedin.png" alt="LinkedIn Manu" class="icono-red">
+                </a>
+            </div>
+        </footer>
+  </main>
+      <!-- Modal de Confirmacion de Compra;  El sistema debe lanzar un modal que pregunte si el cliente quiere confirmar la compra.   -->
+    <div id="modalConfirmacion" class="modal" style="display: none;">
+      <div class="modal-contenido">
+        <span class="cerrar" id="cerrarModal">&times;</span>
+        <h2>¿Confirmás tu compra?</h2>
+        <p id="detalleCompra"></p>
+        <div style="display: flex; justify-content: center; gap: 1rem;">
+          <button id="btnConfirmar" class="btn btn-success">Confirmar compra</button>
+          <button id="btnCancelar" class="btn btn-danger">Cancelar</button>
+        </div>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/frontend/scripts/carrito.js"></script>
+<script src="/frontend/styles/theme/theme.js"></script>
+  </body>
+</html>
+
+</body>
+
+</html>

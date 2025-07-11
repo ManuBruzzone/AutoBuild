@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoBuild</title>
+    <link rel="icon" href="/frontend/assets/logo_pagina.png" type="image/png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/frontend/styles/style.css">
+    <link rel="stylesheet" href="/frontend/styles/ayuda.css">
+    <link rel="stylesheet" href="/frontend/styles/theme/dark.css">
+
+    </head>
+    <body>
+    <main>
+        <header class="encabezado">
+            <button id="toggle-modo">🌙</button>
+
+            <div id="contenedor-logo-productos" class="contenedor-logo">
+                <img src="/frontend/assets/logo_pagina_editada.png" alt="AutoBuild" class="logo" />
+                <h1 class="logo-nombre">AutoBuild</h1>
+            </div>
+
+            <div class="paginas">
+                <nav id="navegacion">
+                <a href="./inicio.html">Inicio</a>
+                <a href="./ayuda.html">Ayuda</a>
+                <a href="./carrito.html">🛒</a>
+                </nav>
+            </div>
+
+            <div class="contenedor-iniciar-sesion" id="btn-salir">
+                <img
+                src="/frontend/assets/salir-alt.png"
+                alt="Iniciar Sesion"
+                class="logo-salir"
+                />
+            </div>
+        </header>
+
+        <section class="ayuda">
+            <div class="ayuda-container">
+                <h1>Centro de Ayuda</h1>
+
+                <div class="acordeon">
+                    <details open>
+                        <summary>🛒 ¿Cómo comprar en el AutoServicio?</summary>
+                        <div class="respuesta">
+                            <ul>
+                                <li><strong>1. Elegí tu producto:</strong> Navegá por el catálogo y seleccioná el procesador o la placa de video que querés.</li>
+                                <li><strong>2. Agregalo al pedido:</strong> Hacé clic en “Agregar” para sumarlo a tu pedido.</li>
+                                <li><strong>3. Revisá tu pedido:</strong> Tocá el ícono del carrito para ver todo lo que vas a llevar.</li>
+                                <li><strong>4. Pagá en caja:</strong> Una vez confirmado, acercate a la caja con tu número de pedido para abonar.</li>
+                                <li><strong>5. Retirá tu compra:</strong> En minutos, tu pedido va a estar listo para retirar en el mostrador.</li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <footer class="pie">
+            <div class="desarrolladores">
+                <p>Desarrollado por Noelia Coro y Manuel Bruzzone</p>
+            </div>
+
+            <div class="contenedor-pie">
+                <p>&copy; 2025 AutoBuild. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://github.com/ManuBruzzone" target="_blank" title="GitHub de Manu">
+                    <img src="/frontend/assets/github.png" alt="GitHub Manu" class="icono-red">
+                </a>
+
+                <a href="https://www.linkedin.com/in/manuelbruzzone/" target="_blank" title="LinkedIn de Manu">
+                    <img src="/frontend/assets/linkedin.png" alt="LinkedIn Manu" class="icono-red">
+                </a>
+
+            </div>
+        </footer>
+
+        <script src="/frontend/main.js"></script>
+        <script src="/frontend/styles/theme/theme.js"></script>
+    </main>
+</body>
+</html>

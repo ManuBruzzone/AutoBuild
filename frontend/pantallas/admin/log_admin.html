@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoBuild</title>
+    <link rel="icon" href="/frontend/assets/logo_pagina_editada.png" type="image/png"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+        <link rel="stylesheet" href="/frontend/styles/style.css">
+        <link rel="stylesheet" href="/frontend/styles/log_admin.css">
+        <link rel="stylesheet" href="/frontend/styles/theme/dark.css">
+</head>
+
+<body>
+  <main>
+    <header class="encabezado-bienvenida">
+          <button id="btn-volver" class="btn-volver">Volver</button>
+          <div class="contenedor-logo">
+              <img src="/frontend/assets/logo_pagina_editada.png" alt="AutoBuild" class="logo" />
+              <h1 class="logo-nombre">AutoBuild</h1>
+          </div>
+    </header>
+
+    <section class="formulario">
+      <div id="alertaLogin" class="alerta-error">
+      </div>
+      
+      <h2>Ingresa como Admin</h2>
+      <form id="loginForm">
+        <div class="requisito">
+          <label for="inputNombreUsuarioAdmin" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="inputNombreUsuarioAdmin" required>
+        </div>
+        <div class="requisito">
+          <label for="inputContraAdmin" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="inputContraAdmin" required>
+        </div>
+        <button type="button" class="btn-acceso" id="btnAccesoRapido">Acceso rápido</button>
+        <button type="submit" class="btn-login">Log In</button>
+      </form>
+    </section>
+
+  <footer class="pie">
+    <div class="desarrolladores">
+        <p>Desarrollado por Noelia Coro y Manuel Bruzzone</p>
+    </div>
+
+    <div class="contenedor-pie">
+        <p>&copy; 2025 AutoBuild. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="redes">
+        <a href="https://github.com/ManuBruzzone" target="_blank" title="GitHub de Manu">
+            <img src="/frontend/assets/github.png" alt="GitHub Manu" class="icono-red">
+        </a>
+
+        <a href="https://www.linkedin.com/in/manuelbruzzone/" target="_blank" title="LinkedIn de Manu">
+            <img src="/frontend/assets/linkedin.png" alt="LinkedIn Manu" class="icono-red">
+        </a>
+
+    </div>
+  </footer>
+
+  </main>
+  <script src="/frontend/styles/theme/theme.js"></script>
+  <script src="/frontend/scripts/scripts_log.js"></script>
+</body>
+</html>

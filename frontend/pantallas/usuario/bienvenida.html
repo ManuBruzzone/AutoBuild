@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoBuild</title>
+    <link rel="icon" href="/frontend/assets/logo_pagina.png" type="image/png" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/frontend/styles/style.css">
+    <link rel="stylesheet" href="/frontend/styles/theme/dark.css">
+    <link rel="stylesheet" href="/frontend/styles/bienvenida.css">
+
+</head>
+<body>
+    <main>
+        <header class="encabezado-bienvenida">
+            <div class="contenedor-logo">
+                <img src="/frontend/assets/logo_pagina_editada.png" alt="AutoBuild" class="logo" />
+                <h1 class="logo-nombre">AutoBuild</h1>
+            </div>
+            
+            <div class="contenedor-iniciar-sesion" id="btn-admin">
+                <img
+                src="/frontend/assets/interfaz-de-usuario-de-administrador.png"
+                alt="Iniciar Sesion"
+                class="logo-iniciar-sesion"
+                />
+            </div>
+
+        </header>
+
+        <section class="Bienvenida">
+
+            <!--<div id="errorNombre" style="
+                display: none;
+                position: fixed;
+                top: 130px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: red;
+                color: white;
+                padding: 20px 170px;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                font-family: Montserrat, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+            "></div>-->
+            
+            <div class="bienvenida-box">
+                <h2>Bienvenido a AutoBuild!</h2>
+                <p>Ingresa tu nombre para comenzar</p>
+                <input type="text" id="nombreUsuario" placeholder="Tu nombre...">
+                <button id="btnContinuar" style="color: #ffff;">Continuar</button>
+            </div>
+        </section>
+
+        <footer class="pie">
+            <div class="desarrolladores">
+                <p>Desarrollado por Noelia Coro y Manuel Bruzzone</p>
+            </div>
+
+            <div class="contenedor-pie">
+                <p>&copy; 2025 AutoBuild. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="redes">
+                <a href="https://github.com/ManuBruzzone" target="_blank" title="GitHub de Manu">
+                    <img src="/frontend/assets/github.png" alt="GitHub Manu" class="icono-red">
+                </a>
+
+                <a href="https://www.linkedin.com/in/manuelbruzzone/" target="_blank" title="LinkedIn de Manu">
+                    <img src="/frontend/assets/linkedin.png" alt="LinkedIn Manu" class="icono-red">
+                </a>
+
+            </div>
+        </footer>
+
+    </main>
+        <script src="/frontend/scripts/validarNombre.js"></script>
+
+        <script src="/frontend/main.js"></script>
+        <script src="/frontend/styles/theme/theme.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </main>
+</body>
+</html>

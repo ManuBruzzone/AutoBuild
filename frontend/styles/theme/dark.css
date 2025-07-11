@@ -1,0 +1,243 @@
+
+body.modo-oscuro {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.modo-oscuro input,
+body.modo-oscuro button {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+body.modo-oscuro h1,
+body.modo-oscuro h2,
+body.modo-oscuro h3 {
+  color: white;
+}
+
+body.modo-oscuro main {
+  background-color: #121212;
+}
+
+body.modo-oscuro .encabezado-bienvenida,
+body.modo-oscuro .pie {
+  background-color: #1f1f1f;
+  color: #eee;
+}
+
+body.modo-oscuro .logo-nombre {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.modo-oscuro input,
+body.modo-oscuro button {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+body.modo-oscuro .bienvenida-box {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+}
+body.modo-oscuro .bienvenida-box input::placeholder {
+  color: #ccc;
+}
+body.modo-oscuro .Bienvenida {
+  background-color: #121212;
+}
+
+
+
+/* modo oscuro AYUDA*/
+body.modo-oscuro .ayuda{
+  background-color: #121212;
+}
+
+body.modo-oscuro .encabezado {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+
+body.modo-oscuro .paginas a {
+  color: #ffffff !important;     
+  text-decoration: none;
+}
+
+body.modo-oscuro .paginas a:hover {
+  color: #ffcc00 !important;      
+}
+
+
+body.modo-oscuro .paginas {
+  color: #cccccc !important;      
+}
+
+
+
+body.modo-oscuro .paginas a:hover {
+  color: #ddd;
+}
+
+body.modo-oscuro .ayuda-container {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+body.modo-oscuro .logo-iniciar-sesion {
+  filter: invert(1); 
+}
+
+body.modo-oscuro .acordeon details {
+  background: #2a2a2a;
+  border-color: #555;
+}
+
+body.modo-oscuro .acordeon summary {
+  color: #fff;
+}
+
+body.modo-oscuro .acordeon details[open] {
+  background: #333;
+}
+
+body.modo-oscuro .respuesta p {
+  color: #ddd;
+}
+
+/*____*/
+body.modo-oscuro h2,
+body.modo-oscuro h1,
+body.modo-oscuro h3 {
+  color: white;
+}
+/*saludo cliente*/
+body.modo-oscuro #saludoCliente {
+  color: white;
+}
+
+/*icono luna sol*/
+#toggle-modo {
+  position: absolute;
+  top: 35px;
+  right: 200px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/*texto box inicio*/
+body.modo-oscuro .producto-inicio {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/*carrito*/
+body.modo-oscuro .producto {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+  box-shadow: 0 0 8px rgba(126, 25, 104, 0.05);
+}
+body.modo-oscuro .producto p {
+  color: #ffffff;
+  font-weight: bold;
+}
+/*carrito*/
+.carrito-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+#carrito-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.boton-vaciar {
+  padding: 0.5rem 1rem;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton-vaciar:hover {
+  background-color: #b02a37;
+}
+/* Estilo general del total */
+#carrito-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  transition: color 0.3s;
+}
+/*contador carrito*/
+body.modo-oscuro .cantidadProducto {
+  color: white;
+}
+
+
+/* Color para modo oscuro */
+body.modo-oscuro #carrito-total {
+  color: white;
+}
+
+/*total carrito*/
+/* Color para modo claro */
+body.modo-claro #carrito-total {
+  color: black;
+}
+
+/*icono admin*/
+body.modo-oscuro .logo-iniciar-sesion {
+  filter: invert(0);
+  -webkit-filter: invert(0);
+}
+
+.boton-finalizar {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton-finalizar:hover {
+  background-color: #218838;
+}
+
+/*  ticket */
+body.modo-oscuro .producto-ticket {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #eee;
+}
+
+body.modo-oscuro .producto-ticket p {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  color: #eee;
+}
+
+body.modo-oscuro .empresa-nombre {
+  color: #ccc;
+}
+/* footer */
+body.modo-oscuro footer.pie {
+  background-color: #1f1f1f;
+  color: #ffff;
+}

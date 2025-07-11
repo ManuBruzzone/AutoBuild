@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/backend/public/styles/styles.css" />
+        <title>Editar Procesador</title>
+    </head>
+    <body>
+        <form class="form-cargar" id="formEditarProcesador">
+            <div class="aviso-crear">
+                <h2>Editando Procesador #<%= procesador.id %></h2>      
+            </div>
+            
+            <div class="form-grid">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" value="<%= procesador.nombre %>" required />
+                </div>
+                <div>
+                    <label for="marca">Marca</label>
+                    <input id="marca" name="marca" type="text" value="<%= procesador.marca %>" required />
+                </div>
+                <div>
+                    <label for="modelo">Modelo</label>
+                    <input id="modelo" name="modelo" type="text" value="<%= procesador.modelo %>" required />
+                </div>
+                <div>
+                    <label for="socket">Socket</label>
+                    <input id="socket" name="socket" type="text" value="<%= procesador.socket %>" required />
+                </div>
+                <div>
+                    <label for="chipsetGpu">Chipset GPU</label>
+                    <input id="chipsetGpu" name="chipsetGpu" type="text" value="<%= procesador.chipsetGpu %>" required />
+                </div>
+                <div>
+                    <label for="nucleos">Núcleos</label>
+                    <input id="nucleos" name="nucleos" type="number" min="1" value="<%= procesador.nucleos %>" required />
+                </div>
+                <div>
+                    <label for="hilos">Hilos</label>
+                    <input id="hilos" name="hilos" type="number" min="1" value="<%= procesador.hilos %>" required />
+                </div>
+                <div>
+                    <label for="frecuencia">Frecuencia (GHz)</label>
+                    <input id="frecuencia" name="frecuencia" type="number" step="0.01" min="0" value="<%= procesador.frecuencia %>" required />
+                </div>
+                <div>
+                    <label for="precio">Precio</label>
+                    <input id="precio" name="precio" type="number" min="0" value="<%= procesador.precio %>" required />
+                </div>
+                <div>
+                    <label for="fechaLanzamiento">Fecha de Lanzamiento</label>
+                    <input id="fechaLanzamiento" name="fechaLanzamiento" type="date" value="<%= procesador.fechaLanzamiento.toISOString().slice(0,10) %>" required />
+                </div>
+                <div>
+                    <label for="imagen">Imagen</label>
+                    <input id="imagen" name="imagen" type="file" data-url-actual="<%= procesador.imagen %>" />
+                    <small>Imagen actual: <a href="<%= procesador.imagen %>" target="_blank">ver</a></small>
+                </div>
+                <div>
+                    <label for="visible">¿Visible?</label>
+                    <input id="visible" name="visible" type="checkbox" <%= procesador.visible ? "checked" : "" %> />
+                </div>
+            </div>
+            <div class="contenedor-boton">
+                <button id="editarProcesador" data-id="<%= procesador.id %>">Guardar Cambios</button>
+            </div>
+        </form>
+
+        <script src="/js/editarProcesador.js"></script>
+    </body>
+</html>
